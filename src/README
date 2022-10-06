@@ -1,0 +1,39 @@
+definire una Smartphone classe che implementa Cloneablee ha:
+5 attributi:
+una string a brandName
+una string a modelName
+un int batterymAh
+un attributo producerPrice di tipo SmartphonePrice
+un attributo retailPrice di tipo SmartphonePrice
+[usando IntelliJ] un'override del toString() metodo per stampare tutti gli attributi di un Smartphone oggetto
+[using IntelliJ] un'override del equals() metodo che controlla tutti i 5 attributi per stabilire se due Smartphone oggetti sono uguali
+[using IntelliJ] un'override di hashCode(), usando tutti i 5 attributi
+[usando IntelliJ] un'override del clone() metodo (che dovrà essere public) dove:
+a clonedSmartphone viene generato utilizzando super.clone()
+c'è un incarico al clonedSmartphone.producerPrice
+c'è un incarico al clonedSmartphone.retailPrice
+il valore restituito è un Smartphone oggetto
+un metodo di costruzione che accetta 5 parametri ( brand, model, battery, prodP, retailP) e assegna i valori corretti all'oggetto
+definire una SmartphonePrice classe che implementa Cloneablee ha:
+2 attributi:
+una string a priceType
+un doppio priceInEuros
+[usando IntelliJ] un'override del clone() metodo (che dovrà essere public) dove:
+a clonedSmartphonePrice viene generato utilizzando super.clone()
+il valore restituito è un SmartphonePrice oggetto
+[usando IntelliJ] un'override del toString() metodo per restituire un'informazione String sui 2 SmartphonePrice attributi
+[using IntelliJ] un'override del equals() metodo che controlla i 2 attributi per stabilire se due SmartphonePrice oggetti sono uguali
+[using IntelliJ] un'override di hashCode(), usando i 2 attributi
+un metodo costruttore che accetta 2 parametri ( type, price) e assegna i valori corretti all'oggetto
+definisci una classe tester con main() metodo in cui tu:
+crea 4 nuovi SmartphonePrice oggetti: 2 for Producer e 2 for Retail
+creare 2 nuovi oggetti, utilizzando i 4 oggetti Smartphone appena creati SmartphonePrice
+stampa in console tutti i dettagli dei 2 Smartphone oggetti appena creati
+verificare se il primo smartphone è uguale al secondo smartphone, informando l'utente
+usa a try{ ... } catch(Exception exception) { ... }per:
+ottenere un nuovo Smartphone oggetto clonando il secondo Smartphone
+stampa in console tutti i dettagli dell'oggetto appena clonato
+verificare se il secondo smartphone è uguale all'oggetto appena clonato, informando l'utente
+all'interno del campo di catch(Exception exception) { ... } applicazione:
+stampa la traccia dello stack dell'eccezione
+informare l'utente dell'errore
